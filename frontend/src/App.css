@@ -1,0 +1,187 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00cb77;
+  background-image: linear-gradient(239deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.teams {
+  max-width: 1200px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1900px;
+}
+
+.linkBox {
+  text-decoration: none;
+}
+
+.team-member {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  padding-top: 40px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.profImage {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.team-member > h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.team-member p {
+  text-align: start;
+  text-decoration: none;
+}
+
+/* Profile Page */
+.profilePage {
+  height: 100vh;
+  padding-inline: 30px;
+  text-align: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9afd9;
+  background-image: linear-gradient(239deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+.profilePageContainer {
+  text-overflow: ellipsis;
+  max-width: 1000px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.profileIntro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.profileTitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profileRole {
+  margin: 0;
+  color: #4f4f4f;
+}
+
+.profilePage p {
+  margin-top: 5px;
+}
+
+.backButton {
+  margin-bottom: 10px;
+}
+
+.goBackButton {
+  padding: 10px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.profileAbout {
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+/* Styling for the table */
+.techTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.techTable th,
+.techTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.techTable th {
+  background-color: #f2f2f2;
+}
+
+.techTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.techTable tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 800px) {
+  .App {
+    height: 100%; /* Set height to 100% for mobile devices */
+  }
+
+  .profilePage {
+    height: 100%;
+  }
+
+  .profilePageContainer {
+    text-overflow: ellipsis;
+    max-width: 427px;
+  }
+  .profilePageContainer {
+    text-overflow: ellipsis;
+    max-width: 427px;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .team-member:hover {
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
